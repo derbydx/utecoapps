@@ -10,7 +10,7 @@ namespace XamarinLab
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new SuperPaginaPage();
         }
 
         protected override void OnStart()

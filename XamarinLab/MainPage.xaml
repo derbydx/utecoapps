@@ -6,11 +6,73 @@
              mc:Ignorable="d"
              x:Class="XamarinLab.MainPage">
 
-    <StackLayout>
+    <StackLayout Orientation="Vertical"
+                 BackgroundColor="White"
+                 Padding="20,50,20,10">
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Image Source="logo.png"
+               WidthRequest="50"
+               HeightRequest="50"
+               HorizontalOptions="Center"/>
+
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+            <Label Text="Username" 
+               HorizontalOptions="Start"
+               VerticalOptions="Center"
+                   VerticalTextAlignment="End"/>
+
+            <Entry Text="Hola!"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="Center">
+
+            </Entry>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Password" 
+               HorizontalOptions="Start"
+               VerticalOptions="Center"/>
+
+            <Entry Text="Hola!"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="Center"
+                   IsPassword="True">
+
+            </Entry>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+            <Label Text="Recuerdame" 
+               HorizontalOptions="Start"
+               VerticalOptions="Center"
+                   VerticalTextAlignment="End"/>
+
+            <Switch IsToggled="False"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="Center">
+
+            </Switch>
+
+            <CheckBox IsChecked="False"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="End" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" VerticalOptions="End">
+            <Button Text="Iniciar Sesion"
+                CornerRadius="10"
+                FontSize="10"
+                HorizontalOptions="StartAndExpand"
+                BackgroundColor="Blue"
+                TextColor="White"/>
+        <Button Text="Registrarse"
+                x:Name="MiBotonFavorito"
+                FontSize="10"
+                HorizontalOptions="CenterAndExpand"
+                BackgroundColor="Red"
+                TextColor="White"/>
+        </StackLayout>
+
+        <Button BackgroundColor="Transparent"
+                TextColor="Blue"
+                Text="Olvide mi contraseña" />
     </StackLayout>
 
 </ContentPage>

@@ -16,6 +16,7 @@ namespace XamarinLab
         public MainPage()
         {
             InitializeComponent();
+            //MiBotonFavorito
         }
     }
 }
